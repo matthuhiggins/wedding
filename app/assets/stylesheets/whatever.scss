@@ -1,0 +1,9 @@
+html {
+}
+
+@media (min-width: 768px) {
+  body .container {
+      background-color: white;
+      width: 970px !important;
+  }
+}
