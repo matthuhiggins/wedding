@@ -1,6 +1,6 @@
 #home {
 //  margin-top: 4em;
-  margin-top: 2em;
+  margin-top: 4em;
 //  min-width: 450px;
 
   h1, h2 {
@@ -24,7 +24,7 @@
 
     .plus {
       margin-top: -0.2em;
-      margin-left: 0.6em;
+      margin-left: 0.5em;
       margin-right: 0.1em;
     }
   }
@@ -45,11 +45,11 @@
 @media (max-width: 768px) {
   #home {
     h1 {
-      font-size: 74px;
+      font-size: 60px;
     }
 
     h2 {
-      font-size: 28px;
+      font-size: 22px;
     }
   }
 }
