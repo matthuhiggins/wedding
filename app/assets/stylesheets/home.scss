@@ -30,14 +30,11 @@
     }
   }
 
-  .plus {
-  }
-
   h2 {
-    font-size: 40px;
+    font-size: 47px;
     font-weight: 300;
     margin: 0 0 0 0;
-    padding: 0 0 40px 0;
+    padding: 0.2em 0 0.6em 0;
     white-space: nowrap;
 
     a {
@@ -49,11 +46,11 @@
 @media (max-width: 768px) {
   #home {
     h1 {
-      font-size: 70px;
+      font-size: 69px;
     }
 
     h2 {
-      font-size: 30px;
+      font-size: 27px;
     }
   }
 }
