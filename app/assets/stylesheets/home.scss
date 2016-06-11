@@ -11,8 +11,9 @@ html {
 
 body {
   color: #333;
+  line-height: 1.45;
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -23,7 +24,7 @@ a {
 
 h1, h2, h3, h4 {
   color: inherit;
-  line-height: 1.1;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -32,40 +33,48 @@ h1 {
   font-weight: 300;
   letter-spacing: -4px;
   margin: 0;
-  white-space: nowrap;
+  padding: 0;
 }
 
 h2 {
-  
+  font-size: 51px;
+  font-weight: 300;
+  margin: 0 0 0 0;
+  padding: 0.2em 0 0 1.5em;
 }
+
+h3, h4 {
+  text-align: center;
+}
+
 
 h3 {
   font-size: 36px;
+  margin: 0;
+  padding: 40px 0 12px 0;
 }
 
 h4 {
   font-size: 18px;
+  margin: 0;
+  padding: 24px 0 12px 0;
 }
 
 img.img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
+  padding-top: 1em;
 }
 
 p {
-  font-size: 16px;
-  padding-left: 17%;
-  padding-right: 17%;
+  padding: 0 1em;
+  margin: 0;
   text-align: center;
 }
 
 li {
   list-style-type: none;
-}
-
-h4 {
-  margin-top: 2em;
 }
 
 .container {
@@ -96,65 +105,67 @@ nav {
 }
 
 section {
-  margin-right: auto;
-  margin-left: auto;
+  padding-bottom: 40px;
 
   &.alt {
     background-color: #dedddc
   }
-
-  h3,h4 {
-    text-align: center;
-  }
-}
-
-#home {
-  margin-bottom: 1em;
-  margin-top: 4em;
-  text-align: left;
-
-  h1 {
-
-  }
-
-  > h1 {
-    margin-left: 0.5em;
-  }
-
-  .special {
-    margin-top: -15px;
-    overflow: hidden;
-
-    h1 {
-      float: left;
-    }
-
-    .plus {
-      margin-top: -0.2em;
-      margin-left: 1em;
-      margin-right: 0.1em;
-    }
-
-    .matthew {
-      margin-top: -0.1em;
-    }
-  }
-
-  h2 {
-    font-size: 51px;
-    font-weight: 300;
-    margin: 0 0 0 0;
-    padding: 0.2em 0 0.6em 1.5em;
-    white-space: nowrap;
-  }
-  
 }
 
 .container {
   width: 970px;
 }
 
+#home {
+  margin-top: 4em;
+  text-align: left;
+
+  h1.brigitte {
+    margin-left: 0.5em;
+  }
+
+  .special {
+    margin-top: -0.2em;
+    overflow: hidden;
+
+    h1 {
+      float: left;
+    }
+  }
+
+  h1.plus {
+    margin-top: -0.2em;
+    margin-left: 1em;
+    margin-right: 0.1em;
+  }
+
+  h1.matthew {
+    margin-top: -0.1em;
+  }
+}
+
+#address {
+  padding: 20px 0;
+}
+
+#countdown {
+  padding-bottom: 4em;
+
+  h3 {
+    padding-top: 0;
+  }
+}
+
+#copyright {
+  color: #999;
+  font-size: 85%;
+}
+
 @media (max-width: 768px) {
+  .container {
+    width: 600px;
+  }
+
   h1 {
     font-size: 80px;
   }
@@ -164,28 +175,37 @@ section {
   }
 
   h3 {
+    font-size: 20px;
+  }
+
+  h4 {
     font-size: 16px;
   }
-}
-
-@media (max-width: 550px) {
-  h1 {
-    font-size: 60px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-  
 }
 
 @media (max-width: 450px) {
+  body {
+    font-size: 12px;
+  }
+
+  nav .brand {
+    display: none;
+  }
+
+  nav a {
+    padding: 6px;
+  }
+
   .container {
-    min-width: 290px;
+    width: 290px;
+  }
+
+  #home h1.brigitte {
+    margin-left: 0.2em;
+  }
+
+  #home h1.plus {
+    margin-left: 0.5em;
   }
 
   h1 {
@@ -194,9 +214,16 @@ section {
 
   h2 {
     font-size: 18px;
+    padding-left: 0.5em;
   }
 
   h3 {
+    font-size: 16px;
+    padding: 20px 0 8px 0;
+  }
+
+  h4 {
     font-size: 12px;
+    padding: 16px 0 8px 0;
   }
 }
