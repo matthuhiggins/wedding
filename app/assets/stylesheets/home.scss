@@ -148,10 +148,40 @@ section {
   h1.matthew {
     margin-top: -0.1em;
   }
+
+  .caption {
+    font-size: 90%;
+    text-align: right;
+  }
 }
 
 #address {
-  padding: 20px 0;
+  padding-top: 20px;
+}
+
+#uber-code {
+  background-color: #605B56;
+  color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#photos {
+  margin-top: 24px;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+//    max-height: 120px;
+    width: 120px;
+    margin: 0;
+    padding: 5px;
+  }
 }
 
 #countdown {
@@ -160,13 +190,6 @@ section {
   h3 {
     padding-top: 0;
   }
-}
-
-#uber-code {
-  background-color: #605B56;
-  color: white;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
 
 #copyright {
@@ -242,5 +265,9 @@ section {
   h4 {
     font-size: 12px;
     padding: 16px 0 8px 0;
+  }
+  
+  #photos img {
+    width: 100px;
   }
 }
