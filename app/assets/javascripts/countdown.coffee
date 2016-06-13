@@ -4,15 +4,12 @@ jQuery ->
   mSecondsPerDay = 24 * mSecondsPerHour
 
   getWeddingDate = ->
-    console.log('1')
     date = new Date()
     
-    console.log('2')
     date.setMonth(7)
     date.setDate(6)
     date.setFullYear(2016)
-    console.log('3')
-    date.setUTCHours(11, 0, 0)
+    date.setUTCHours(23, 0, 0)
     date
 
   weddingDate = getWeddingDate()
