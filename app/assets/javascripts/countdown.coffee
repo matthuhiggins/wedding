@@ -5,11 +5,12 @@ jQuery ->
 
   getWeddingDate = ->
     date = new Date()
-    
+
     date.setMonth(7)
     date.setDate(6)
     date.setFullYear(2016)
     date.setUTCHours(23, 0, 0)
+
     date
 
   weddingDate = getWeddingDate()
@@ -17,11 +18,16 @@ jQuery ->
 
   updateCountdown = ->
     now = new Date()
+    weddingDate = getWeddingDate()
 
-    if weddingDate < now # Reset!
-      weddingDate = getWeddingDate()
-    
-    timeLeft = weddingDate - now
+    if weddingDate > now
+      countdown.find('.married-for').hide()
+      countdown.find('.see-you').show()
+      timeLeft = weddingDate - now
+    else
+      countdown.find('.married-for').show()
+      countdown.find('.see-you').hide()
+      timeLeft = now - weddingDate
 
     countdown.find('.days').text(Math.floor(timeLeft / mSecondsPerDay))
     countdown.find('.hours').text(Math.floor(timeLeft / mSecondsPerHour) % 24)
