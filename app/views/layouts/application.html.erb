@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <%= render 'menu' %>
+    <%= render 'menu' if action_name == 'index' %>
     <%= yield %>
   </body>
 </html>
